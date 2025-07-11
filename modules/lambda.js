@@ -1,4 +1,5 @@
 
+require('dotenv').config();
 const path = require("path");
 const fs = require("fs");
 const transformation = require("../transformation");
@@ -191,10 +192,11 @@ const exec = async () => {
             "key": "value"
         },
         parameter: {
+            
             getConnectorParameter: () => {
                 let connectorParameters = {
-                    AppKey: "yourKey",
-                    AppToken: "yourToken"
+                    AppKey: process.env.APP_KEY_VTEX,
+                    AppToken: process.env.APP_TOKEN_VTEX
                 }
 
                 return connectorParameters;
