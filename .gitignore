@@ -1,0 +1,9 @@
+dynamics/*
+!dynamics/exemplo.json
+inputs/*
+!inputs/exemplo.json
+kvm/*
+!kvm/exemplo.json
+node_modules
+package-lock.json
+.env
