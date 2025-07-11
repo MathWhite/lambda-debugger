@@ -5,6 +5,8 @@ exports.handler = async (_inputs, _wevo) => {
         _wevo.logMessage.info(exemplo[0].sas);
         let something = await _wevo.dynamicStorage.getFirstAsync("exemplo");
 
+        console.log("teste");
+
         return JSON.stringify(something);
     }
     catch(error){
